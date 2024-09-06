@@ -1,0 +1,36 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+React-frontend/node_modules/
+React-frontend/.pnp/
+React-frontend/.pnp.js/
+.yarn/install-state.gz/
+
+# testing
+React-frontend/coverage
+
+# next.js
+React-frontend/.next/
+React-frontend/out/
+
+# production
+React-frontend/build
+
+# misc
+React-frontend/.DS_Store
+React-frontend/*.pem
+
+# debug
+React-frontend/npm-debug.log*
+React-frontend/yarn-debug.log*
+React-frontend/yarn-error.log*
+
+# local env files
+React-frontend/.env*.local
+
+# vercel
+React-frontend/.vercel
+
+# typescript
+React-frontend/*.tsbuildinfo
+React-frontend/next-env.d.ts
