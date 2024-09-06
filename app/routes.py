@@ -7,3 +7,5 @@ def search():
     data = request.get_json()
     query = data.get('query', '')
     return jsonify({"query": query})
+
+
