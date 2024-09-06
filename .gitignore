@@ -1,8 +1,25 @@
-venv
-.git
-react-frontend
-__pycache__
-React-frontend/node_modules/
-React-frontend/.next/
+# Virtual environment
+venv/
+
+# Git directory
+.git/
+
+# React frontend
+React-frontend/
+!React-frontend/src/
+!React-frontend/public/
+
+# Python cache
+__pycache__/
+
+# Node modules
 node_modules/
-66daf11619983cce58576437
+
+# Next.js build output
+.next/
+
+# PyCharm cache
+.idea/
+
+# VS Code settings
+.vscode/
