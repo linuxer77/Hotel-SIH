@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+    --p:#5651e5;
+    --pl:#709dff;
+}
+.i{
+     color:var(--p)
+}
+@layer base  {
+    
+    li{
+        @apply p-4 
+    }
+    h1{
+        @apply text-3xl md:text-4xl font-bold
+    }
+    h2{
+        @apply text-3xl font-bold
+    }
+    h3{
+        @apply text-xl font-bold
+    }
+    button{
+        @apply p-4 border bg-gradient-to-r from-[var(--p)] to-[var(--pl)] text-white rounded-md
+    }
+    .i{
+        @apply text-2xl cursor-pointer 
+    }
+  }

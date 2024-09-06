@@ -1,25 +1,36 @@
-# Virtual environment
-venv/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Git directory
-.git/
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
 
-# React frontend
-React-frontend/
-!React-frontend/src/
-!React-frontend/public/
+# testing
+/coverage
 
-# Python cache
-__pycache__/
+# next.js
+/.next/
+/out/
 
-# Node modules
-node_modules/
+# production
+/build
 
-# Next.js build output
-.next/
+# misc
+.DS_Store
+*.pem
 
-# PyCharm cache
-.idea/
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# VS Code settings
-.vscode/
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
