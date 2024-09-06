@@ -4,3 +4,4 @@ react-frontend
 __pycache__
 React-frontend/node_modules/
 React-frontend/.next/
+node_modules/
