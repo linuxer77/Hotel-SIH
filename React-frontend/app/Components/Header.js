@@ -24,9 +24,11 @@ const Header = () => {
 
       const jsonResponse = await response.json();
 
-      // Navigate to /results with the data in query parameters
-      const jsonString = encodeURIComponent(JSON.stringify(jsonResponse));
-      router.push(`/results?data=${jsonString}`);
+      // Store the JSON response in sessionStorage or localStorage (or use context)
+      sessionStorage.setItem("searchResults", JSON.stringify(jsonResponse));
+
+      // Navigate to the results page without query parameters
+      router.push(`/results`);
     } catch (error) {
       console.error("Error:", error);
     }
