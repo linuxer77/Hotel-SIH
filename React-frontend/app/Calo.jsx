@@ -3,14 +3,17 @@ import React,{useState} from 'react'
 import { BsArrowLeftSquareFill , BsArrowRightSquareFill } from 'react-icons/bs';
 const slide=[
     {
-        url:'https://cdn.pixabay.com/photo/2023/03/07/07/36/stairs-7835153_960_720.jpg'
+        url:'https://wallpaperaccess.com/full/5486091.jpg'
     },
     {
-        url:'https://images.pexels.com/photos/1045113/pexels-photo-1045113.jpeg?auto=compress&cs=tinysrgb&w=600'
+        url:'https://wallpaperaccess.com/full/7158839.jpg'
     },
    {
-    url:'https://images.pexels.com/photos/262325/pexels-photo-262325.jpeg?auto=compress&cs=tinysrgb&w=600'
-   } 
+    url:'https://wallpaperaccess.com/full/8075226.jpg'
+   } ,
+   {
+    url: 'https://wallpaperaccess.com/full/7685657.jpg'
+   }
 ];
 const Calo = () => {
     const [slidee, setslidee] = useState(0)
@@ -27,7 +30,8 @@ const Calo = () => {
       <BsArrowRightSquareFill onClick={nslide} className='absolute top-[50%] text-3xl text-white cursor-pointer right-8'></BsArrowRightSquareFill>
       {slide.map((item,index)=>(
         <div className={index==slidee ? 'opacity-100':'opacity-0'}>
-           {index===slidee && (<img className='w-full rounded-md' src={item.url} />)}
+           {index === slidee && (< img className='w-full rounded-md' src={item.url} / > ) 
+           }
         </div>
       ))}
     </div>

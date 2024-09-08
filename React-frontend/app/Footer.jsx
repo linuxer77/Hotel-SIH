@@ -27,14 +27,12 @@ const Footer = () => {
             <li>Partnerships</li>
             <li>Careers</li>
             <li>Newsroom</li>
-            <li>Advertising</li>
           </ul>
           <ul className="text-right lg:flex">
           <Link href="\Home"><li>Home</li></Link>
       <Link href="\Vieww"><li>View</li></Link>
-      <Link href="\Travel"><li>Travel</li></Link>
-      <Link href="\Destinations"><li>Destinations</li></Link>
-      <Link href="\Book"><li>Book</li></Link>
+      <Link href="\Explore"><li>Explore</li></Link>
+      <Link href="\Hotel"><li>Hotels</li></Link>
           </ul>
         </div>
       </div>

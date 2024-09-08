@@ -31,14 +31,11 @@ const Navbar = () => {
         <Link href="\Vieww">
           <li>View</li>
         </Link>
-        <Link href="\Travel">
-          <li>Travel</li>
+        <Link href="\Explore">
+          <li>Explore</li>
         </Link>
-        <Link href="\Destinations">
-          <li>Destinations</li>
-        </Link>
-        <Link href="\Book">
-          <li>Book</li>
+        <Link href="\Hotel">
+          <li>Hotels</li>
         </Link>
       </ul>
 
@@ -64,14 +61,11 @@ const Navbar = () => {
           <Link href="\Vieww">
             <li className="border-b">View</li>
           </Link>
-          <Link href="\Travel">
-            <li className="border-b">Travel</li>
+          <Link href="\Explore">
+            <li className="border-b">Explore</li>
           </Link>
-          <Link href="\Destinations">
-            <li className="border-b">Destinations</li>
-          </Link>
-          <Link href="\Book">
-            <li className="border-b">Book</li>
+          <Link href="\Hotel">
+            <li className="border-b">Hotels</li>
           </Link>
           <div className="flex flex-col"></div>
           <div className="flex justify-between my-5">
