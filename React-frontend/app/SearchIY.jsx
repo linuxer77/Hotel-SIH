@@ -1,5 +1,5 @@
 "use client";
-import React , {useState} from "react";
+import React, { useState } from "react";
 import { RiCustomerService2Fill, RiCustomerService2Full } from "react-icons/ri";
 import { MdOutlineTravelExplore } from "react-icons/md";
 const SearchIY = () => {
@@ -10,22 +10,26 @@ const SearchIY = () => {
     <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16">
       <div className="lg:col-span-2 flex flex-col justify-evenly">
         <div>
-          <h2>LUXURY INCLUDED VACATIONS</h2>
+          <h2>INNOVATIVE TOURISM EXPERIENCES</h2>
           <p className="py-4">
-            Experience the Ultimate Luxury All-Inclusive Vacation for Four
-            Indulge in the epitome of luxury with an all-inclusive vacation
-            designed for four people. Imagine staying in a stunning overwater
-            bungalow in the Maldives, where every detail is taken care of. Enjoy
-            gourmet dining, private beach access, and a plethora of activities
-            such as snorkeling, kayaking, and sunset cruises. For those seeking
-            adventure, a safari lodge in Botswana offers an unparalleled
-            experience with included safari tours, riverboat excursions, and
-            exquisite meals. Witness the majestic wildlife in their natural
-            habitat while enjoying the comforts of a five-star resort. If a
-            tropical paradise is more your style, consider a private island
-            retreat in Panama. With seven pristine beaches and lush jungle
-            surroundings, you can explore the beauty of nature while enjoying
-            all-inclusive meals, beverages, and guided tours.
+            Discover a New Era of Travel and Tourism Innovation Step into the
+            future of travel with cutting-edge solutions that redefine the way
+            you explore the world. Imagine personalized travel itineraries
+            designed using AI, where your preferences for culture, adventure, or
+            relaxation shape your journey. Experience smart tourism with
+            immersive virtual tours of historic landmarks, allowing you to
+            explore from the comfort of your home or pre-plan your next
+            adventure. For eco-conscious travelers, discover sustainable tourism
+            options, from eco-lodges in pristine forests to renewable
+            energy-powered resorts, all designed to minimize your environmental
+            footprint while maximizing your experience. If cultural heritage is
+            your focus, engage in community-based tourism that supports local
+            artisans, traditions, and unique cultural experiences, all while
+            contributing to regional growth. Whether it’s an AI-driven hotel
+            booking platform, dynamic travel recommendations, or seamless
+            integration of local transportation and accommodations, these
+            solutions offer a glimpse into the future of a thriving tourism
+            industry
           </p>
         </div>
         <div className="grid sm:grid-cols-2 gap-8 py-4">
@@ -36,7 +40,8 @@ const SearchIY = () => {
             <div>
               <h3 className="py-2">Leading Service</h3>
               <p className="py-1">
-                ALL INCLUSIVE SERVICE FOR 20 Years IN-A-ROW
+                DRIVING TOURISM GROWTH FOR 20 YEARS THROUGH TECHNOLOGY &
+                INNOVATION Pioneering Innovation{" "}
               </p>
             </div>
           </div>
@@ -47,7 +52,8 @@ const SearchIY = () => {
             <div>
               <h3 className="py-2">Leading Service</h3>
               <p className="py-1">
-                ALL INCLUSIVE SERVICE FOR 20 Years IN-A-ROW
+                DRIVING TOURISM GROWTH FOR 20 YEARS THROUGH TECHNOLOGY &
+                INNOVATION Pioneering Innovation{" "}
               </p>
             </div>
           </div>
@@ -56,7 +62,9 @@ const SearchIY = () => {
       <div>
         <div className="border text-center">
           <p className="py-2">Query and Help Provider</p>
-          <p className="bg-gray-800 text-gray-200 py-2">24 Hours Available For Your Help</p>
+          <p className="bg-gray-800 text-gray-200 py-2">
+            24 Hours Available For Your Help
+          </p>
         </div>
         <form
           className="w-full"
@@ -76,7 +84,7 @@ const SearchIY = () => {
               placeholder="Enter your Personal ID"
               name="Email_ID"
               value={Datee}
-              onChange={(e)=>setDatee(e.target.value)}
+              onChange={(e) => setDatee(e.target.value)}
             />
           </div>
           <div className=" flex flex-col my-2 ">
@@ -86,7 +94,7 @@ const SearchIY = () => {
               type="text"
               name="Type of Query"
               value={Que}
-              onChange={(e)=>setQue(e.target.value)}
+              onChange={(e) => setQue(e.target.value)}
             />
           </div>
           <div className="flex flex-col my-2">
@@ -96,7 +104,7 @@ const SearchIY = () => {
               type="text"
               name="Query Details"
               value={Det}
-              onChange={(e)=>setDet(e.target.value)}
+              onChange={(e) => setDet(e.target.value)}
             />
           </div>
           <button className="w-full my-4">Submit</button>

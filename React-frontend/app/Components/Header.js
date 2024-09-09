@@ -45,8 +45,12 @@ const Header = () => {
       />
       <div className="absolute top-0 left-0 w-full h-full bg-gray-900/30">
         <div className="absolute top-0 w-full h-full flex flex-col justify-center text-center text-white p-4">
-          <h1>First Class Travel</h1>
-          <h2 className="py-4">Top 1% Locations Worldwide</h2>
+          <h1 style={{ fontSize: "27px" }}>
+            Discover Unique Travel Destinations
+          </h1>
+          <h2 style={{ fontSize: "20px" }} className="py-3">
+            Unlock Travel Deals with AI
+          </h2>
           <form
             className="flex justify-between items-center max-w-[700px] mx-auto w-full border p-1 rounded-md text-black bg-gray-100/100"
             onSubmit={handleSubmit}
@@ -54,7 +58,7 @@ const Header = () => {
             <input
               className="bg-transparent w-[300px] sm:w-400px focus:outline-none"
               type="text"
-              placeholder="Talk with AI"
+              placeholder="Explore Hotels with AI"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />

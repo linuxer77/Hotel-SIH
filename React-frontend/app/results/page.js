@@ -126,12 +126,12 @@ const Results = () => {
                 {hotel.nearby_places?.[0]?.name || "N/A"}
               </p>
               <p style={textStyle}>
-                <strong>Amenities:</strong>{" "}
+                <strong>Services:</strong>{" "}
                 {hotel.amenities?.join(", ") || "N/A"}
               </p>
               <p style={priceStyle}>
-                <strong>Price per night:</strong> ₹
-                {hotel.rate_per_night?.extracted_lowest || "N/A"}
+                <strong>Price per night: </strong>
+                {hotel.rate_per_night?.lowest || "N/A"}
               </p>
               <p style={ratingStyle}>{hotel.overall_rating || "N/A"} / 5</p>
             </div>
