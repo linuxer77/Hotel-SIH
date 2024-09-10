@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useRouter } from "next/navigation";
@@ -59,7 +60,7 @@ const Header = () => {
             onSubmit={handleSubmit}
           >
             <input
-              className="bg-transparent w-[300px] sm:w-400px focus:outline-none"
+              className="bg-transparent w-[300px] sm:w-[400px] focus:outline-none"
               type="text"
               placeholder="Explore with AI"
               value={searchQuery}
