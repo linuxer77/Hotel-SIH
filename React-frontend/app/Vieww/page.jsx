@@ -3,6 +3,7 @@ import Header from "@/app/Components/Header";
 import Navbar from "@/app/Navbar";
 import Footer from "@/app/Footer";
 // import SELECT from "@/app/Product/SELECT";
+
 const page = () => {
   return (
     <div>
@@ -15,25 +16,31 @@ const page = () => {
           <img
             className="w-full h-full object-cover col-span-2 md:col-span-3 row-span-2"
             src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Best-Places-to-Visit-in-Kerala.jpg"
+            alt="Scenic view of Kerala, India"
           />
           <img
             className="w-full h-full object-cover"
             src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Thekkady-Kerala-768x472.jpg"
+            alt="View of Thekkady, Kerala"
           />
           <img
             className="w-full h-full object-cover"
             src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Kochi-Kerala-768x472.jpg"
+            alt="Kochi backwaters in Kerala"
           />
           <img
             className="w-full h-full object-cover"
             src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Payyambalam-Beach-Kannur-Kerala-768x472.jpg"
+            alt="Payyambalam Beach, Kannur"
           />
           <img
             className="w-full h-full object-cover"
             src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Munnar-Kerala-768x472.jpg"
+            alt="Munnar hills in Kerala"
           />
         </div>
       </div>
+
       <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16">
         <div className="lg:col-span-2 flex flex-col justify-evenly">
           <div>
@@ -83,7 +90,7 @@ const page = () => {
             severe cold, with snowfall in some regions. Autumn and Spring
             provide pleasant weather with moderate temperatures. India's climate
             is influenced by the Himalayas, oceans, and geographical variations,
-            resulting in a rich and varied weather pattern.The country's
+            resulting in a rich and varied weather pattern. The country's
             population is one of the world's largest, with over 1.3 billion
             people, making it a vibrant and dynamic nation. The climate and
             weather in India vary greatly due to its vast size and diverse
@@ -91,6 +98,7 @@ const page = () => {
           </p>
         </div>
       </div>
+
       <div className="max-w-[1240px] mx-auto p-16 px-4 text-center">
         <h1>Adventures Places</h1>
         <p className="py-4">Best Summer Destinations</p>
@@ -98,22 +106,27 @@ const page = () => {
           <img
             className="w-full h-full object-cover col-span-2 md:col-span-3 row-span-2"
             src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Jodhpur-Rajasthan.jpg"
+            alt="Jodhpur, Rajasthan scenic view"
           />
           <img
             className="w-full h-full object-cover"
             src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Rann-of-Kutch-Gujarat.jpg"
+            alt="Rann of Kutch, Gujarat view"
           />
           <img
             className="w-full h-full object-cover"
             src="https://www.tourmyindia.com/imagess/nepal1-tours.webp"
+            alt="Nepal adventure tours view"
           />
           <img
             className="w-full h-full object-cover"
             src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Best-Places-to-Visit-in-February-in-India.jpg"
+            alt="Best places to visit in India during February"
           />
           <img
             className="w-full h-full object-cover"
             src="https://www.tourmyindia.com/imagess/wildlife-tour.webp"
+            alt="Wildlife tour in India"
           />
         </div>
       </div>
