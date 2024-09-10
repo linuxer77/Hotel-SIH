@@ -14,7 +14,7 @@ const page = () => {
       <Destination></Destination>
       <SearchIY></SearchIY>
       <Select></Select>
-      <Calo></Calo>
+      {/* <Calo></Calo> */}
       <Footer></Footer>
     </div>
   );
