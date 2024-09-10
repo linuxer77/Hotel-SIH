@@ -114,6 +114,8 @@ const Results = () => {
             <img
               src={
                 hotel.images?.[0]?.thumbnail ||
+                hotel.images?.[1]?.thumbnail ||
+                hotel.images?.[2]?.thumbnail ||
                 "https://via.placeholder.com/150"
               }
               alt={hotel.name}
@@ -149,7 +151,9 @@ const Results = () => {
                   Object.assign(e.currentTarget.style, buttonStyle);
                 }}
               >
-                {hotel.link ? "Book Now" : "Booking site not available"}
+                {hotel.link
+                  ? "Book Now"
+                  : "Booking site not available right now."}
               </div>
             </a>
           </div>

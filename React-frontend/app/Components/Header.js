@@ -58,7 +58,7 @@ const Header = () => {
             <input
               className="bg-transparent w-[300px] sm:w-400px focus:outline-none"
               type="text"
-              placeholder="Explore Hotels with AI"
+              placeholder="Explore with AI"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />

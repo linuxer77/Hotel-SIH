@@ -75,13 +75,12 @@ def search():
         "check_in_date": "2024-09-18",
         "check_out_date": "2024-09-28",
         "adults": "1",
-        "currency": f"{get_all_info()[6:]}",
-        "gl": f"{get_all_info()[3:5]}",
-        "hl": f"{get_all_info()[:2]}",
+        "currency": f"{get_all_info()[6:]}", # Cuurency of the country
+        "gl": f"{get_all_info()[3:5]}", # Country in the 2 word form
+        "hl": f"{get_all_info()[:2]}", # Language in the 2 word form
         "api_key": "94d60742b92907667abcf9ebb2682c70c3c89bd7f974054e1e3a614b5d40dbd9" 
     }
 
     search = GoogleSearch(params)
     results = search.get_dict()
     return jsonify(results)
-
