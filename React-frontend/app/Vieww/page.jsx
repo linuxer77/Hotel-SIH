@@ -2,23 +2,38 @@ import React from "react";
 import Header from "@/app/Components/Header";
 import Navbar from "@/app/Navbar";
 import Footer from "@/app/Footer";
-import SELECT from "@/app/Product/SELECT";
+// import SELECT from "@/app/Product/SELECT";
 const page = () => {
   return (
     <div>
       <Navbar></Navbar>
       <Header></Header>
-      <div className='max-w-[1240px] mx-auto p-16 px-4 text-center'>
+      <div className="max-w-[1240px] mx-auto p-16 px-4 text-center">
         <h1>All-Inclusive Places</h1>
-        <p className='py-4'>On the Best Places</p>   
-        <div className='grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4'>
-            <img className='w-full h-full object-cover col-span-2 md:col-span-3 row-span-2' src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Best-Places-to-Visit-in-Kerala.jpg"/>
-            <img className='w-full h-full object-cover' src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Thekkady-Kerala-768x472.jpg"/>
-            <img className='w-full h-full object-cover' src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Kochi-Kerala-768x472.jpg"/>
-            <img className='w-full h-full object-cover' src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Payyambalam-Beach-Kannur-Kerala-768x472.jpg"/>
-            <img className='w-full h-full object-cover' src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Munnar-Kerala-768x472.jpg"/>
+        <p className="py-4">On the Best Places</p>
+        <div className="grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4">
+          <img
+            className="w-full h-full object-cover col-span-2 md:col-span-3 row-span-2"
+            src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Best-Places-to-Visit-in-Kerala.jpg"
+          />
+          <img
+            className="w-full h-full object-cover"
+            src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Thekkady-Kerala-768x472.jpg"
+          />
+          <img
+            className="w-full h-full object-cover"
+            src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Kochi-Kerala-768x472.jpg"
+          />
+          <img
+            className="w-full h-full object-cover"
+            src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Payyambalam-Beach-Kannur-Kerala-768x472.jpg"
+          />
+          <img
+            className="w-full h-full object-cover"
+            src="https://www.tourmyindia.com/blog//wp-content/uploads/2024/07/Munnar-Kerala-768x472.jpg"
+          />
         </div>
-    </div>
+      </div>
       <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16">
         <div className="lg:col-span-2 flex flex-col justify-evenly">
           <div>
@@ -56,37 +71,53 @@ const page = () => {
           </div>
         </div>
         <div className="text-left border">
-        <h3 className="text-center">Climate Overview</h3>
+          <h3 className="text-center">Climate Overview</h3>
           <p className="py-4">
             India experiences a diverse climate and weather conditions due to
             its vast size and geographical features. The country is
             characterized by five main seasons: Spring, Summer, Monsoon, Autumn,
             and Winter. The Summer season, from April to mid-June, brings
             scorching temperatures, especially in the northern plains. The
-            Monsoon, from mid-June to Sept, brings heavy rainfall, crucial
-            for agriculture. Winter, from November to February, varies from mild
-            to severe cold, with snowfall in some regions. Autumn and Spring
+            Monsoon, from mid-June to Sept, brings heavy rainfall, crucial for
+            agriculture. Winter, from November to February, varies from mild to
+            severe cold, with snowfall in some regions. Autumn and Spring
             provide pleasant weather with moderate temperatures. India's climate
             is influenced by the Himalayas, oceans, and geographical variations,
-            resulting in a rich and varied weather pattern.The country's population is one of
-              the world's largest, with over 1.3 billion people, making it a
-              vibrant and dynamic nation. The climate and weather in India vary
-              greatly due to its vast size and diverse topography.
+            resulting in a rich and varied weather pattern.The country's
+            population is one of the world's largest, with over 1.3 billion
+            people, making it a vibrant and dynamic nation. The climate and
+            weather in India vary greatly due to its vast size and diverse
+            topography.
           </p>
         </div>
       </div>
-      <div className='max-w-[1240px] mx-auto p-16 px-4 text-center'>
+      <div className="max-w-[1240px] mx-auto p-16 px-4 text-center">
         <h1>Adventures Places</h1>
-        <p className='py-4'>Best Summer Destinations</p>   
-        <div className='grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4'>
-            <img className='w-full h-full object-cover col-span-2 md:col-span-3 row-span-2' src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Jodhpur-Rajasthan.jpg"/>
-            <img className='w-full h-full object-cover' src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Rann-of-Kutch-Gujarat.jpg"/>
-            <img className='w-full h-full object-cover' src="https://www.tourmyindia.com/imagess/nepal1-tours.webp"/>
-            <img className='w-full h-full object-cover' src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Best-Places-to-Visit-in-February-in-India.jpg"/>
-            <img className='w-full h-full object-cover' src="https://www.tourmyindia.com/imagess/wildlife-tour.webp"/>
+        <p className="py-4">Best Summer Destinations</p>
+        <div className="grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4">
+          <img
+            className="w-full h-full object-cover col-span-2 md:col-span-3 row-span-2"
+            src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Jodhpur-Rajasthan.jpg"
+          />
+          <img
+            className="w-full h-full object-cover"
+            src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Rann-of-Kutch-Gujarat.jpg"
+          />
+          <img
+            className="w-full h-full object-cover"
+            src="https://www.tourmyindia.com/imagess/nepal1-tours.webp"
+          />
+          <img
+            className="w-full h-full object-cover"
+            src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Best-Places-to-Visit-in-February-in-India.jpg"
+          />
+          <img
+            className="w-full h-full object-cover"
+            src="https://www.tourmyindia.com/imagess/wildlife-tour.webp"
+          />
         </div>
-    </div>
-          <Footer></Footer>
+      </div>
+      <Footer></Footer>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import Header from "@/app/Components/Header";
 import Destination from "@/app/Destination";
 import SearchIY from "@/app/SearchIY";
 import Select from "@/app/Select";
-import Calo from "@/app/Calo";
+// import Calo from "@/app/Calo";
 import Footer from "@/app/Footer";
 const page = () => {
   return (
@@ -14,7 +14,7 @@ const page = () => {
       <Destination></Destination>
       <SearchIY></SearchIY>
       <Select></Select>
-      <Calo></Calo>
+      {/* <Calo></Calo> */}
       <Footer></Footer>
     </div>
   );

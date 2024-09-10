@@ -1,5 +1,5 @@
-import Header from '@/app/Components/Header'
-import "./globals.css"
+// import Header from '@/app/Components/Header'
+import "./globals.css";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -7,10 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className='p-0'>
-     
-        {children}
-        </body>
+      <body className="p-0">{children}</body>
     </html>
   );
 }
