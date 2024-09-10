@@ -10,13 +10,16 @@ const Header = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://linuxer3443.pythonanywhere.com/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ query: searchQuery }),
-      });
+      const response = await fetch(
+        "https://linuxer3443.pythonanywhere.com/search",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ query: searchQuery }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -24,10 +27,10 @@ const Header = () => {
 
       const jsonResponse = await response.json();
 
-      // Store the JSON response in sessionStorage or localStorage (or use context)
+      // Store the JSON response in sessionStorage
       sessionStorage.setItem("searchResults", JSON.stringify(jsonResponse));
 
-      // Navigate to the results page without query parameters
+      // Navigate to the results page
       router.push(`/results`);
     } catch (error) {
       console.error("Error:", error);
@@ -37,7 +40,7 @@ const Header = () => {
   return (
     <div className="w-full h-screen relative">
       <video
-        className="w-full h-full object-cover color"
+        className="w-full h-full object-cover"
         src="https://videos.pexels.com/video-files/2096553/2096553-sd_640_360_30fps.mp4"
         autoPlay
         loop
