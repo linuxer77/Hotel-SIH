@@ -35,5 +35,5 @@
     "tailwindcss": "^3.4.1",
     "typescript": "5.5.4"
   },
-  "proxy": "https://linuxer3443.pythonanywhere.com/"
+  "proxy": "http://127.0.0.1:5000"
 }
