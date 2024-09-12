@@ -78,7 +78,7 @@ def search():
         "currency": f"{get_all_info()[6:]}", # Cuurency of the country
         "gl": f"{get_all_info()[3:5]}", # Country in the 2 word form
         "hl": f"{get_all_info()[:2]}", # Language in the 2 word form
-        "api_key": "94d60742b92907667abcf9ebb2682c70c3c89bd7f974054e1e3a614b5d40dbd9" 
+        "api_key": "d1f4a2c969cbf8107db96930deca77a2e46cee7036039be012eb9891ea45ee3c" 
     }
 
     search = GoogleSearch(params)
