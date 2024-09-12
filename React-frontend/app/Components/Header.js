@@ -11,7 +11,7 @@ const Header = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/search", {
+      const response = await fetch("http://10.223.15.148:5000/search", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
