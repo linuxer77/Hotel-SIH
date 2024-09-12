@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useRouter } from "next/navigation";
@@ -24,10 +25,10 @@ const Header = () => {
 
       const jsonResponse = await response.json();
 
-      // Store the JSON response in sessionStorage or localStorage (or use context)
+      // Store the JSON response in sessionStorage
       sessionStorage.setItem("searchResults", JSON.stringify(jsonResponse));
 
-      // Navigate to the results page without query parameters
+      // Navigate to the results page
       router.push(`/results`);
     } catch (error) {
       console.error("Error:", error);
@@ -37,7 +38,7 @@ const Header = () => {
   return (
     <div className="w-full h-screen relative">
       <video
-        className="w-full h-full object-cover color"
+        className="w-full h-full object-cover"
         src="https://videos.pexels.com/video-files/2096553/2096553-sd_640_360_30fps.mp4"
         autoPlay
         loop
@@ -56,7 +57,7 @@ const Header = () => {
             onSubmit={handleSubmit}
           >
             <input
-              className="bg-transparent w-[300px] sm:w-400px focus:outline-none"
+              className="bg-transparent w-[300px] sm:w-[400px] focus:outline-none"
               type="text"
               placeholder="Explore with AI"
               value={searchQuery}
