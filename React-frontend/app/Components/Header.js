@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineAudio } from "react-icons/ai";
 import { useRouter } from "next/navigation";
 
 const Header = () => {
@@ -38,6 +38,12 @@ const Header = () => {
     }
   };
 
+  const handleMicClick = () => {
+    // Implement speech recognition logic here
+    console.log("Microphone clicked");
+    // You can add Web Speech API implementation here
+  };
+
   return (
     <div className="w-full h-screen relative">
       <video
@@ -66,13 +72,22 @@ const Header = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <button type="submit">
-              <AiOutlineSearch
-                className="i"
-                style={{ color: "#ffffff" }}
-                size={18}
-              />
-            </button>
+            <div className="flex items-center">
+              <button type="submit" className="mr-2">
+                <AiOutlineSearch
+                  className="i"
+                  style={{ color: "#ffffff" }}
+                  size={18}
+                />
+              </button>
+              <button type="button" onClick={handleMicClick}>
+                <AiOutlineAudio
+                  className="i"
+                  style={{ color: "#ffffff" }}
+                  size={18}
+                />
+              </button>
+            </div>
           </form>
         </div>
       </div>
